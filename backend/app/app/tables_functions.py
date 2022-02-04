@@ -1,3 +1,9 @@
+<<<<<<< HEAD:backend/app/app/tables_functions.py
+=======
+# upgrade and downgrade functions for the Alembic file
+#Replace the empty upgrade and downgrade functions in the Revisions file with the fns below:
+
+>>>>>>> 7ff842fe8f4af34a0f7ce4452e28002958a11882:backend/app/app/upgrade_and_downgrade_functions.py
 def upgrade():
     op.create_table('users',
     sa.Column('id', sa.Integer(), nullable=False),
@@ -42,3 +48,4 @@ def downgrade():
     op.drop_table('users')
 
     op.drop_table('assets')
+   
